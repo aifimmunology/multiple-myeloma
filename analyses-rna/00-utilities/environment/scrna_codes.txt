@@ -1,0 +1,137 @@
+## Order for BMMC Treatment Timepoints
+bmmc_tx_tp = [
+    'MM Pre-Treatment',
+    'MM End Induction 1st Draw',
+    'MM Post Transplant 90 Days',
+    'MM Post Transplant 1 year',
+    'MM Post Transplant 2 year',
+    'Healthy'
+]
+
+## Order for PBMC Treatment Timepoints
+pbmc_tx_tp = [
+    'MM Pre-Treatment',
+    'MM Post Induction 2-Cycles',
+    'MM End Induction 1st',
+    'MM Post Transplant 60 Days',
+    'MM Post Transplant 90 Days',
+    'MM Post Transplant 1 year',
+    'MM Post Transplant 2 year',
+    'Healthy'
+]
+
+## Order for PBMC Flu Timepoints
+pbmc_flu_tp = [
+    'Flu Year 1 Stand-Alone',
+    'Flu Year 1 Day 0',
+    'Flu Year 1 Day 7',
+    'Flu Year 1 Day 90',
+    'Flu Year 2 Stand-Alone',
+    'Flu Year 2 Day 0',
+    'Flu Year 2 Day 7',
+    'Flu Year 2 Day 90'
+]
+
+## PBMC Treatment Kit IDs
+pbmc_tx_kits = [
+    'KT00133', 'KT00132', 'KT00134', 'KT00135', 'KT00136', 'KT00137', 'KT00138', 'KT00139', 'KT00233', 'KT00234',
+    'KT00235', 'KT00236', 'KT00237', 'KT00238', 'KT00239', 'KT00240', 'KT00241', 'KT00242', 'KT00243', 'KT00244',
+    'KT00245', 'KT00246', 'KT00247', 'KT00248', 'KT00249', 'KT00251', 'KT01315', 'KT01316', 'KT01317', 'KT01322',
+    'KT01324', 'KT01325', 'KT01333', 'KT01334', 'KT01337', 'KT01335', 'KT01348', 'KT01357', 'KT01360', 'KT01358',
+    'KT01364', 'KT02047', 'KT02050', 'KT02052', 'KT02068', 'KT02072', 'KT02079', 'KT02087', 'KT02094', 'KT02679',
+    'KT02681', 'KT02686', 'KT02697', 'KT02709', 'KT02728', 'KT02729', 'KT02747', 'KT02750', 'KT02771', 'KT02772',
+    'KT04527', 'KT04528', 'KT04531', 'KT04532', 'KT04686', 'KT04695', 'KT04828', 'KT04848', 'KT05006', 'KT05007',
+    'KT05008', 'KT05119', 'KT06425', 'KT06442', 'KT06445'
+]
+
+## PBMC Healthy Kit IDs from BRI
+pbmc_br_healthy_kits = [
+    'KT00015', 'KT00025', 'KT00339', 'KT00352', 'KT00356', 'KT00368', 'KT00369', 'KT00383', 'KT00388', 'KT00390',
+    'KT00516', 'KT00520', 'KT00526', 'KT00533', 'KT00537', 'KT00539', 'KT00541', 'KT00545', 'KT00557', 'KT00563',
+    'KT00564', 'KT00566', 'KT00582', 'KT00588', 'KT00599', 'KT00600', 'KT00602', 'KT00625'
+]
+
+## PBMC Flu Kit IDs
+pbmc_flu_kits = [
+    'KT00015', 'KT00020', 'KT00025', 'KT00029', 'KT00151', 'KT00250', 'KT00258', 'KT00285', 'KT00287', 'KT00289',
+    'KT00291', 'KT00293', 'KT00294', 'KT00297', 'KT00330', 'KT00333', 'KT00336', 'KT00339', 'KT00344', 'KT00348',
+    'KT00352', 'KT00356', 'KT00360', 'KT00368', 'KT00369', 'KT00371', 'KT00374', 'KT00379', 'KT00381', 'KT00383',
+    'KT00388', 'KT00389', 'KT00390', 'KT00399', 'KT00503', 'KT00508', 'KT00515', 'KT00516', 'KT00519', 'KT00520',
+    'KT00526', 'KT00533', 'KT00534', 'KT00537', 'KT00538', 'KT00539', 'KT00541', 'KT00543', 'KT00545', 'KT00550',
+    'KT00553', 'KT00556', 'KT00557', 'KT00560', 'KT00563', 'KT00564', 'KT00566', 'KT00571', 'KT00577', 'KT00581',
+    'KT00580', 'KT00582', 'KT00584', 'KT00590', 'KT00588', 'KT00597', 'KT00599', 'KT00600', 'KT00602', 'KT00604',
+    'KT00603', 'KT00611', 'KT00605', 'KT00614', 'KT00618', 'KT00624', 'KT00619', 'KT00625', 'KT00626', 'KT00627',
+    'KT00632', 'KT00636', 'KT00639', 'KT00641', 'KT00642', 'KT00648', 'KT01318', 'KT01319', 'KT01321', 'KT01323',
+    'KT01326', 'KT01328', 'KT01351', 'KT01356', 'KT01416', 'KT01418', 'KT01421', 'KT01423', 'KT01424', 'KT01427',
+    'KT01428', 'KT01431', 'KT01441', 'KT01444', 'KT01445', 'KT01447', 'KT01449', 'KT01451', 'KT01452', 'KT01453',
+    'KT01509', 'KT01512', 'KT01543', 'KT01585', 'KT02049', 'KT02051', 'KT02053', 'KT02054', 'KT02055', 'KT02056',
+    'KT02057', 'KT02059', 'KT02060', 'KT02061', 'KT02062', 'KT02063', 'KT02064', 'KT02065', 'KT02066', 'KT02067',
+    'KT02069', 'KT02071', 'KT02073', 'KT02076', 'KT02078', 'KT02081', 'KT02082', 'KT02084', 'KT02085', 'KT02088',
+    'KT02091', 'KT02339', 'KT02340', 'KT02341', 'KT02346', 'KT02347', 'KT02349', 'KT02350', 'KT02351', 'KT02353',
+    'KT02356', 'KT02357', 'KT02358', 'KT02445', 'KT02450', 'KT02452', 'KT02453', 'KT02455', 'KT02456', 'KT02457',
+    'KT02461', 'KT02463', 'KT02464', 'KT02474', 'KT02481', 'KT02484', 'KT02485', 'KT02488', 'KT02498', 'KT02499',
+    'KT02500', 'KT02501', 'KT02502', 'KT02503', 'KT02504', 'KT02505', 'KT02508', 'KT02511', 'KT02512', 'KT02513',
+    'KT02514', 'KT02515', 'KT02516', 'KT02518', 'KT02521', 'KT02522', 'KT02525', 'KT02528', 'KT02530', 'KT02531',
+    'KT02533', 'KT02538', 'KT02540', 'KT02542', 'KT02546', 'KT02551', 'KT02554', 'KT02565', 'KT02568', 'KT02569',
+    'KT02574', 'KT02575', 'KT02576', 'KT02579', 'KT02582', 'KT02583', 'KT02585', 'KT02586', 'KT02587', 'KT02689',
+    'KT02695', 'KT02732', 'KT02733', 'KT02735', 'KT02737', 'KT02738', 'KT02740', 'KT02762', 'KT02763', 'KT02767',
+    'KT02768', 'KT02770', 'KT03061', 'KT03063', 'KT03064', 'KT03066', 'KT03069', 'KT03070', 'KT03073', 'KT03076',
+    'KT03078', 'KT03079', 'KT03084', 'KT03086', 'KT03088', 'KT03090', 'KT03092', 'KT03093', 'KT03094', 'KT03104',
+    'KT03897', 'KT04615', 'KT04677', 'KT04679', 'KT04680', 'KT04681', 'KT04682', 'KT04683', 'KT04684', 'KT04693',
+    'KT04694', 'KT04696', 'KT04697', 'KT04698', 'KT04700', 'KT04701', 'KT04807', 'KT04809', 'KT04810', 'KT04831',
+    'KT05128', 'KT05148', 'KT06420', 'KT06422', 'KT06423', 'KT06424', 'KT06426', 'KT06427', 'KT06437', 'KT06440'
+]
+
+## Frequency columns of interest
+desired_cols = [
+    'sample.sampleKitGuid', # KIT ID
+    'subject.subjectGuid', # Subject ID
+    'sample.visitDetails', # Visit Details
+    'sample.visitName', # Visit Name
+    'manual.batch_id', # Batch ID
+    'subject.biologicalSex', # Sex
+    'subject.birthYear', # Birth Year 
+    'manual.category', # Manually assigned tissue x status category
+    'manual.flu_response', # Flu response 
+    'subject.cmv' # CMV data
+]
+
+## Add a Mask
+mask = adata.obs['sample.sampleKitGuid'].isin(pbmc_br_healthy_kits)
+
+# add new level
+col = 'sample.visitDetails'
+if pd.api.types.is_categorical_dtype(adata.obs[col]):
+    adata.obs[col] = adata.obs[col].cat.add_categories(['Healthy'])
+
+adata.obs.loc[mask, col] = 'Healthy'
+
+
+# Short Hand codes
+visit_labels = {
+    "MM Pre-Treatment": "PreTx",
+    "MM Post Induction 2-Cycles": "PI2C",
+    "MM End Induction 1st Draw": "EI",
+    "MM Post Transplant 60 Days": "ASCT60d",
+    "MM Post Transplant 90 Days": "ASCT90d",
+    "MM Post Transplant 1 year": "ASCT1y",
+    "MM Post Transplant 2 year": "ASCT2y",
+    "Healthy": "Healthy"
+}
+
+visit_names = {'Flu Year 1 Day 0' : 'Flu_Y1D0',
+'Flu Year 1 Day 7' : 'Flu_Y1D7',
+'Other - Non-Flu' : np.nan,
+'Flu Year 1 Day 90' : 'Flu_Y1D90',
+'Flu Year 1 Stand-Alone' : 'Flu_Y1SA',
+'Flu Year 2 Stand-Alone' : 'Flu_Y2SA',
+'Flu Year 2 Day 0' : 'Flu_Y2D0',
+'Flu Year 2 Day 7' : 'Flu_Y2D7',
+'Flu Year 2 Day 90' : 'Flu_Y2D90', 
+'COVID-19 Visit 5 Pre-transplant' : np.nan,
+'COVID-19 Visit 4 Pre-transplant' : np.nan,
+'COVID-19 Visit 6 Pre-transplant' : np.nan,
+'COVID-19 Visit 7 Pre-transplant' : np.nan,
+'COVID-19 Visit 15 Post-transplant' : np.nan
+}
+ 

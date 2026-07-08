@@ -1,0 +1,19 @@
+# Step 1: Create the Conda environment from the YAML file
+conda env create --prefix /home/workspace/environment/ndmm-scrna --file ac-scanpy-envt.yml
+
+# Step 2: Activate the environment
+conda activate /home/workspace/environment/ndmm-scrna
+
+# Step 3: Add the environment to Jupyter as a kernel
+python -m ipykernel install --user --name=ndmm_scrna --display-name "Python (ndmm-scrna)"
+
+# Step 4: Install HISE
+cd sdk/hisepy_v1.3.0-hotfix2
+python setup.py build
+pip install .
+
+
+# R Environment -- Mostly used for plotting
+conda env create --prefix /home/workspace/environment/seurat_v5 --file Zi_R_seurat_v5.yml
+conda activate /home/workspace/environment/seurat_v5
+R -e "IRkernel::installspec(name='seurat_v5', displayname='R (seurat)')"

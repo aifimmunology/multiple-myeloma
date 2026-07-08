@@ -1,0 +1,32 @@
+# Checkpoints
+.ipynb_checkpoints/
+
+# Data files
+*.h5ad
+*.csv
+*.tsv
+*.parquet
+*.pkl
+*.rds
+*.RDS
+*.xlsx
+*.xls
+
+# Archives
+*.tar.gz
+*.tar
+*.zip
+
+# Outputs
+*.png
+*.pdf
+*.svg
+
+# Build / cache / results
+**/results/
+**/files/
+**/cache/
+**/data/
+**/input/
+**/inputs/
+book/_build/

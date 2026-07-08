@@ -1,0 +1,32 @@
+# Configure environment via conda installation
+
+#!/usr/bin/env bash
+
+# Create a conda environment with R
+# conda create -n r_env -c conda-forge r-base r-essentials -y
+# conda activate r_env
+conda activate /home/workspace/environment/olink
+
+# Try installing packages available on conda-forge
+conda install -c conda-forge \
+  r-logger \
+  r-visdat \
+  r-janitor \
+  r-skimr \
+  r-ggridges \
+  r-mice \
+  r-vcd -y
+
+# For packages not available on conda, install from CRAN within R
+Rscript -e 'install.packages(c("OlinkAnalyze", "gtExtras"), repos="https://cloud.r-project.org")'
+
+Rscript -e 'install.packages("gt", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("naniar", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("gtsummary", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("mice", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("vcd", repos="https://cloud.r-project.org")'
+Rscript -e 'q(BiocManager::install("UniProt.ws")'
+Rscript -e 'devtools::install_github("aifimmunology/immutils")'
+Rscript -e 'devtools::install_github("aifimmunology/olink-qc-report")'
+Rscript -e 'install.packages("table1", repos="https://cloud.r-project.org")'
+conda install ipykernel==6.30.1

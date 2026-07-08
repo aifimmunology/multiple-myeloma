@@ -1,0 +1,34 @@
+name: /home/workspace/environment/scNMF
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - ipykernel
+  - jupyterlab
+  - notebook
+  - ipywidgets
+  - nb_conda_kernels
+  - scanpy
+  - anndata
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - h5py
+  - matplotlib
+  - seaborn
+  - umap-learn
+  - joblib
+  - tqdm
+  - pillow
+  - numba
+  - pynndescent
+  - igraph
+  - leidenalg
+  - pip:
+      - sc-toolbox
+      - git+https://github.com/yyoshiaki/NMFprojection.git
+prefix: /home/workspace/environment/scNMF
